@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:keepScreenOn="true"
+    >
+
+    <FrameLayout
+        android:id="@+id/video_surface_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:foregroundGravity="clip_horizontal|clip_vertical"
+        android:onClick="showChAndEpg"
+        tools:ignore="true">
+
+        <ViewStub
+            android:id="@+id/surface_stub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/surface_view" />
+
+        <ViewStub
+            android:id="@+id/subtitles_surface_stub"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout="@layout/surface_view" />
+
+        <ViewStub
+            android:id="@+id/texture_stub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/texture_view" />
+
+        <RelativeLayout
+            android:id="@+id/channelpanel"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/settingbtncolor"
+                android:onClick="chPlus"
+                android:text="Ch +" />
+
+            <Button
+                android:id="@+id/hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/settingbtncolor"
+                android:onClick="hide"
+                android:text="Hide" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/settingbtncolor"
+                android:onClick="volPlus"
+                android:text="Vol +"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/settingbtncolor"
+                android:onClick="volMinus"
+                android:text="Vol -"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/settingbtncolor"
+                android:onClick="chMinus"
+                android:text="CH -" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/epgpanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:background="@drawable/epgdetails"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cdes"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_margin="3dp"
+                android:background="#C11C57BD"
+                android:inputType="textMultiLine"
+                android:text="This is channel discription and we know you know it better than us"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="#C11C57BD"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currentchannel"
+                    android:layout_width="460dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:background="#9EAC39"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/nextchannel"
+                    android:layout_width="484dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#E2DEDE"
+                    android:gravity="center"
+                    android:inputType="textMultiLine|textImeMultiLine"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

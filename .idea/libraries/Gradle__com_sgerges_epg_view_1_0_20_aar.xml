@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sgerges:epg-view:1.0.20@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/952dd323076a469a71f6490515e1245b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/952dd323076a469a71f6490515e1245b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sgerges/epg-view/1.0.20/f1e345e1e1b676e8634b547f91ab79a8c36af858/epg-view-1.0.20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

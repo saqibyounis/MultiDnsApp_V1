@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavouriteActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/newbg"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/channelsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/lb_playback_controls_background_light"
+            android:iconifiedByDefault="true"
+            android:queryHint="Search here">
+
+            <requestFocus />
+
+        </SearchView>
+
+        <GridView
+            android:id="@+id/channelgrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+
+            android:layout_marginLeft="5dp"
+            android:columnWidth="80dp"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@drawable/selected_cate"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"></GridView>
+
+    </LinearLayout>
+
+</RelativeLayout>

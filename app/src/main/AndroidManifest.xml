@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kamel.tivi"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.kamel.tivi.EpgViewAct"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name="com.kamel.tivi.player.vlc.VlcNew"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.kamel.tivi.SelectServerAct"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <!--
+        <activity
+            android:name=".MultiviewAcr2"
+            android:screenOrientation="landscape" />
+        <activity android:name=".MultiviewActivity" />
+        <activity android:name=".player.nomediaplayer.NoMediPlayer" />
+        -->
+        <activity
+            android:name="com.kamel.tivi.player.VLCActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <!--
+  <activity
+            android:name=".player.ijk.IJKVidoPlayear"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".player.xplyer.XVideoPlayer"
+            android:screenOrientation="landscape" />
+        -->
+        <!--
+        <activity
+            android:name=".MultiviewAcr"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".player.GiraftiVidoPlayer"
+            android:screenOrientation="landscape" />
+        -->
+        <activity android:name="com.kamel.tivi.ParentalControleActivity"
+            android:screenOrientation="landscape"
+
+            />
+
+        <!--
+              <activity
+            android:name="com.kamel.kameltv.vpn.localvpn.LocalVPN"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat"
+
+            >
+
+        </activity>
+
+        <service
+            android:name="com.kamel.kameltv.vpn.localvpn.LocalVPNService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+        -->
+        <activity
+            android:name="com.kamel.tivi.MultiviewAcr"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.kamel.tivi.MultiviewAcr2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.kamel.tivi.player.betterplayer.BetterPlayerActivity"
+            android:banner="@drawable/newlogo"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.RefreshActivity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.EpisodeDetails"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.SeriesDetails"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.FavouriteActivity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.TvGuideActvity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.VODActvity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.SeriesActivity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.AccountActvity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.kamel.tivi.SettingsActivity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="TiVi Settings"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.kamel.tivi.player.exoplayer.ExoPlayerActivity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.LiveTvActivity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.CategoryActivity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.LoginActivity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kamel.tivi.SplashActvity"
+            android:banner="@drawable/newlogo"
+            android:icon="@drawable/newlogo"
+            android:label="@string/app_name"
+            android:logo="@drawable/newlogo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.kamel.tivi.MainActivity"
+            android:banner="@drawable/app_icon_your_company"
+            android:icon="@drawable/app_icon_your_company"
+            android:label="@string/app_name"
+            android:logo="@drawable/app_icon_your_company"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.kamel.tivi.DetailsActivity" />
+        <activity android:name="com.kamel.tivi.PlaybackActivity" />
+        <activity android:name="com.kamel.tivi.BrowseErrorActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbg"
+    tools:context=".LiveTvActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.kamel.tivi.channelcategory.fragment.ChannelCategoryFragment"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"></fragment>
+
+        <LinearLayout
+            android:id="@+id/cl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SearchView
+                android:id="@+id/channelsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/lb_playback_controls_background_light"
+                android:iconifiedByDefault="true"
+                android:queryHint="Search here">
+
+                <requestFocus />
+
+            </SearchView>
+
+            <GridView
+                android:id="@+id/channelgrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:columnWidth="120dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@drawable/selected_cate"
+                android:numColumns="1"
+
+                android:verticalSpacing="10dp">
+
+            </GridView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/playerlinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/multifrag"
+                    android:name="com.kamel.tivi.multiviewfragment.MultiviewPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/epg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:columnWidth="120dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@drawable/selected_cate"
+                android:numColumns="1"
+
+                android:verticalSpacing="10dp">
+
+            </GridView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--  <com.playerlibrary.view.IjkVideoView
+  android:id="@+id/video_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="right"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundGravity="right"
+        android:onClick="fullScreen"
+        android:visibility="gone"
+        />-->
+</RelativeLayout>

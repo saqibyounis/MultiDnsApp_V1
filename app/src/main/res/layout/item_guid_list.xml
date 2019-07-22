@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/main_lay" android:background="@drawable/list_item_channel_draw" android:padding="5sp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20sp">
+        <ImageView android:id="@+id/channel_image" android:layout_width="50sp" android:layout_height="50sp" android:layout_centerInParent="true"/>
+        <TextView android:id="@+id/channel_title" android:background="@drawable/yellow_btn_border" android:visibility="gone" android:layout_width="50sp" android:layout_height="50sp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="15sp" android:textColor="@android:color/white" android:id="@+id/channel_count" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_marginLeft="30sp" android:layout_weight="0.1"/>
+    <TextView android:textSize="15sp" android:textColor="@android:color/white" android:id="@+id/channel_name" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="0.6"/>
+</LinearLayout>

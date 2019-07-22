@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EpgViewAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fragment4"
+            android:name="com.kamel.tivi.epg.fragment.ChannelCategoryFragment"
+            android:layout_width="200dp"
+            android:layout_height="match_parent" />
+
+        <com.kamel.tivi.epg.EPG
+            android:id="@+id/epg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/epg_background" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_multiview" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linear_parent1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/linear_rplayer1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView android:id="@+id/ID_HEAD_VIDEO_VIEW1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp"  app:use_controller="false"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear_player1" android:background="@drawable/linear_border_sel" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_player1" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/plus_icon" android:layout_weight="1"/>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress1" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_icon" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/linear_rplayer2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView android:id="@+id/ID_HEAD_VIDEO_VIEW2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp"  app:use_controller="false"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear_player2" android:background="@drawable/linear_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_player2" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/plus_icon" android:layout_weight="1"/>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress2" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_icon" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linear_parent2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/linear_rplayer3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView android:id="@+id/ID_HEAD_VIDEO_VIEW3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp"  app:use_controller="false"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear_player3" android:background="@drawable/linear_border" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_player3" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/plus_icon" android:layout_weight="1"/>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress3" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_icon" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/linear_rplayer4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView android:id="@+id/ID_HEAD_VIDEO_VIEW4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp" app:use_controller="false"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear_player4" android:background="@drawable/linear_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_player4" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/plus_icon" android:layout_weight="1"/>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pbProgress4" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_icon" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

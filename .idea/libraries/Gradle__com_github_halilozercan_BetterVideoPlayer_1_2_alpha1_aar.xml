@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.halilozercan:BetterVideoPlayer:1.2.alpha1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03c747b4e345193e09ff85e43b5338f8/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03c747b4e345193e09ff85e43b5338f8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03c747b4e345193e09ff85e43b5338f8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.halilozercan/BetterVideoPlayer/1.2.alpha1/13c98ab46dcb7b00c285c900c5443c0e56a98767/BetterVideoPlayer-1.2.alpha1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

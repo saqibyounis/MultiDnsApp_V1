@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:keepScreenOn="true"
+        android:onClick="initView"
+        android:id="@+id/player"
+        >
+
+        <FrameLayout
+            android:id="@+id/video_surface_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foregroundGravity="clip_horizontal|clip_vertical"
+            android:onClick="initView"
+            tools:ignore="true">
+
+            <ViewStub
+                android:id="@+id/surface_stub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/surface_view" />
+
+            <ViewStub
+                android:id="@+id/subtitles_surface_stub"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout="@layout/surface_view" />
+
+            <ViewStub
+                android:id="@+id/texture_stub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/texture_view" />
+
+            <LinearLayout
+                android:id="@+id/cpanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="-8dp"
+                    android:background="@drawable/settingbtncolor"
+
+                    android:gravity="center"
+                    android:onClick="close"
+                    android:text="Hide" />
+
+                <GridView
+                    android:id="@+id/channelgrid"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/epgdetails"
+                    android:columnWidth="80dp"
+                    android:gravity="right"
+
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@drawable/selected_cate"
+                    android:numColumns="1"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/epgpanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@drawable/epgdetails"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cdes"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="#C11C57BD"
+                    android:inputType="textMultiLine"
+                    android:text="This is channel discription and we know you know it better than us"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#C11C57BD"
+                    android:text="TextView"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/currentchannel"
+                        android:layout_width="460dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="#9EAC39"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/nextchannel"
+                        android:layout_width="484dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#E2DEDE"
+                        android:gravity="center"
+                        android:inputType="textMultiLine|textImeMultiLine"
+                        android:text="TextView"
+                        android:textAlignment="viewStart"
+                        android:textColor="#111111"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>
